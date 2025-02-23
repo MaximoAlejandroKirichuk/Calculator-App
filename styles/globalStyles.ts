@@ -41,7 +41,7 @@ export const globalStyles = StyleSheet.create({
     },
     buttonText:{
       textAlign:'center',
-      padding: 10,
+      
       fontSize:30,
       color: Colors.textPrimary,
       fontWeight: '300',

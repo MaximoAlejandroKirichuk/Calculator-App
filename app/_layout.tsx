@@ -1,9 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Platform, StyleSheet, Text, View } from 'react-native'
 import { Slot } from 'expo-router'
 import { useFonts} from 'expo-font'
 import {StatusBar} from 'expo-status-bar'
 import { globalStyles } from '@/styles/globalStyles'
 
+import * as NavigationBar from 'expo-navigation-bar'
+
+const isAndroid = Platform.OS === 'android';
+
+if(isAndroid){
+  NavigationBar.setBackgroundColorAsync('black')
+}
 
 const _layout = () => {
   
